@@ -17,10 +17,47 @@
         </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
+            android:padding="18sp"
             android:id="@+id/mainContent"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <TextView
+                android:text="Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:hint="Tu nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24sp"/>
+
+            <TextView
+                android:text="Contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edContrasenia"
+                android:hint="Tu contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24sp"/>
+
+            <Button
+                android:id="@+id/btnSaludar"
+                android:text="Saludar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 

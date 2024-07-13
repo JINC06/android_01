@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });*/
 
+        binding.btnSaludar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Hola mundo", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 }
